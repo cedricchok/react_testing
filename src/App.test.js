@@ -9,7 +9,7 @@
 
 import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import Home from "./components/Home";
 import Router from 'next/router';
 import App from "./App";
@@ -18,7 +18,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe("Search home", () => {
   test("renders", () => {
-    const home = shallow(<Home />)
+    const home = mount(<Home />)
 
     expect(home.exists()).toBe(true);
   })
@@ -45,4 +45,4 @@ describe("Test of Blog redirection", () => {
 
     expect(spies.routerChangeStart).toHaveBeenCalledWith("localhost:3000/blog");
   })
-})
+});

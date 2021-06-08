@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --verbose",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "enzyme-adapter-react-16": "^1.15.6",
-    "next": "^10.2.3"
+    "next": "^10.2.3",
+    "react-test-renderer": "^17.0.2"
   }
 }

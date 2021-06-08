@@ -14,11 +14,11 @@ function App() {
       <div>
         <nav className="container">
           <ul className="navbar">
-            <li><Link to={'/'} className="link"> Home </Link></li>
-            <li><Link to={'/blog'} className="link">Blog</Link></li>
-            <li><Link to={'/images'} className="link">Images</Link></li>
-            <li><Link to={'/menu'} className="link">Menu</Link></li>
-            <li><Link to={'/parameters'} className="link">Paramètres</Link></li>
+            <li><Link to={'/'} className="link home"> Home </Link></li>
+            <li><Link to={'/blog'} className="link blog">Blog</Link></li>
+            <li><Link to={'/images'} className="link images">Images</Link></li>
+            <li><Link to={'/menu'} className="link menu">Menu</Link></li>
+            <li><Link to={'/parameters'} className="link parameters">Paramètres</Link></li>
           </ul>
         </nav>
         <hr />

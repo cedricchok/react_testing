@@ -1,13 +1,17 @@
 import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import Home from "./Home";
+import Blog from "./Blog";
 
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Search h1", () => {
-  test("renders", () => {
-    const h1 = shallow(<h2></h2>)
+  test("Search h1", () => {
+    const home = mount(<Home />)
 
-    expect(h1.exists()).toBe(true);
+    expect(home.exists()).toBe(true);
+
+    expect(home.find("h1")).toEqual("Home");
   })
 })
